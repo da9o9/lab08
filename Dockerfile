@@ -10,9 +10,9 @@ RUN cmake -H. -B_build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=_instal
 RUN cmake --build _build
 RUN cmake --build _build --target install
 
-ENV LOG_PATH /home/egor/logs/log.txt
+ENV LOG_PATH /home/logs/log.txt
 
-VOLUME /home/egor/logs
+VOLUME /home/logs
 
 WORKDIR _install/bin
 
